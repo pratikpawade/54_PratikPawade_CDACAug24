@@ -51,6 +51,14 @@ echo "Number of characters: $char_count"
 
 
 git commands
+ git init
+ git config --global user.name PratikPawade
+ git config --global user.email pppawade@gmail.com
+ git add 54_PratikPawade_CDACAug24.txt
+ git commit -m "first commit"
+ git remote add origin https://github.com/pratikpawade/54_PratikPawade_CDACAug24.git
+ git push --set-upstream origin master
+ 
 
 
 
