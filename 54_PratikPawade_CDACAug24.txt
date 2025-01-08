@@ -58,7 +58,8 @@ git commands
  git commit -m "first commit"
  git remote add origin https://github.com/pratikpawade/54_PratikPawade_CDACAug24.git
  git push --set-upstream origin master
- 
+ git push 
+ git status 
 
 
 
