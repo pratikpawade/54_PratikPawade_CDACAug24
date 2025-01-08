@@ -1,0 +1,64 @@
+
+
+Q.1
+#!/bin/bash
+echo "Enter the Number" 
+read n
+ r=`expr $n % 2`
+ if [ $r -eq 0 ] 
+then 
+echo "$n is Even number"
+else 
+echo "$n is Odd number"
+ fi
+
+Q.2
+#!/bin/bash
+current_date_time=$(date +"%Y-%m-%d %H:%M:%S")
+username=$(whoami)
+current_directory=$(pwd)
+echo "Current Date and Time: $current_date_time"
+echo "Username: $username"
+echo "Current Working Directory: $current_directory"
+
+Q.3
+#!/bin/bash
+if [ $# -eq 0 ]; then
+echo "No file name provided. Please provide a file name as an argument."
+exit 1
+fi
+if [ ! -f $1 ]; then
+echo "File not found: $1"
+exit 1
+fi
+echo "Displaying the first 10 lines of $1:"
+head -n 10 $1
+
+Q.4
+#!/bin/bash
+filename="Example.txt"
+if [ ! -f "$filename" ]; then
+echo "Error: File '$filename' does not exist."
+exit 1
+fi
+line_count=$(wc -l < "$filename")
+word_count=$(wc -w < "$filename")
+char_count=$(wc -m < "$filename")
+echo "File: $filename"
+echo "Number of lines: $line_count"
+echo "Number of words: $word_count"
+echo "Number of characters: $char_count"
+
+
+git commands
+
+
+
+
+
+
+
+
+
+
+
